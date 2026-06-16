@@ -4,7 +4,7 @@ const TOOLS = [
     category: "Decoder",
     description: "Base64 Decrypter.",
     tags: ["Decrypt", "Base64", "Xworm"],
-    image: "imgs/VoidByteDecoder.png",
+    image: "imgs/VoidByteDecoder.PNG",
     download: "tools/VoidByteDecoder.rar"
   }
 ];
