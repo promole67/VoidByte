@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoidByte</title>
+<link rel="icon" type="image/png" href="imgs/web.png">
+<meta property="og:title" content="VoidByte">
+<meta property="og:description" content="A curated set of network scanning, penetration testing, and security analysis tools.">
+<meta property="og:image" content="imgs/web.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay"></div>
+
+<header class="topbar">
+  <div class="topbar__brand">
+    <img class="brand-logo" src="imgs/web.png" alt="VoidByte" onerror="this.style.display='none'">
+    <span class="brand-bracket">[</span><span class="brand-text">VoidByte</span><span class="brand-bracket">]</span>
+  </div>
+  <nav class="topbar__nav">
+    <a href="#tools">Tools</a>
+    <a href="#team">Team</a>
+    <a href="#connect">Connect</a>
+  </nav>
+  <div class="topbar__status">
+    <span class="dot"></span> System Online
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__eyebrow">[ ETHICAL_TOOLKIT // v1.0 ]</div>
+    <h1 class="hero__title">
+      VoidByte Tools<br>
+      <span class="accent">in one place.</span>
+    </h1>
+    <p class="hero__sub">
+      A curated set of network scanning, penetration testing, and security analysis tools — for learning and responsible use only.
+    </p>
+    <div class="hero__terminal">
+      <div class="terminal__bar">
+        <span class="terminal__dot r"></span>
+        <span class="terminal__dot y"></span>
+        <span class="terminal__dot g"></span>
+        <span class="terminal__path">root@voidbyte:~</span>
+      </div>
+      <div class="terminal__body">
+        <p><span class="prompt">$</span> <span class="typed">scan --target=knowledge --mode=ethical</span></p>
+        <p class="terminal__out">[OK] Ready. Browse the tools below ↓</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="tools">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Tools</h2>
+      <span class="section-line"></span>
+    </div>
+    <div id="tools-grid" class="tools-grid">
+      <!-- cards are built automatically from tools.js -->
+    </div>
+  </section>
+
+  <section id="team" class="team">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Team</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="team-card">
+      <div class="team-card__frame" data-lightbox="imgs/Zlmokah.png" data-caption="Zlmokah — Server Owner">
+        <span class="corner tl"></span><span class="corner tr"></span>
+        <span class="corner bl"></span><span class="corner br"></span>
+        <img src="imgs/Zlmokah.png" alt="Zlmokah" onerror="this.classList.add('img-fallback')">
+      </div>
+      <div class="team-card__info">
+        <span class="team-card__tag">[ SERVER_OWNER ]</span>
+        <h3>Zlmokah</h3>
+        <p>Owner of the server and admin of this site.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="connect" class="connect">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>Connect</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="connect-grid">
+      <a class="connect-card" href="https://www.youtube.com/@zlmokah" target="_blank" rel="noopener">
+        <span class="connect-card__icon">▶</span>
+        <span class="connect-card__body">
+          <span class="connect-card__label">YouTube</span>
+          <span class="connect-card__handle">@zlmokah</span>
+        </span>
+      </a>
+      <a class="connect-card" href="https://t.me/flashegroup" target="_blank" rel="noopener">
+        <span class="connect-card__icon">✈</span>
+        <span class="connect-card__body">
+          <span class="connect-card__label">Telegram</span>
+          <span class="connect-card__handle">t.me/flashegroup</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>For educational and ethical use only — illegal use is the sole responsibility of the user.</p>
+</footer>
+
+<!-- lightbox -->
+<div id="lightbox" class="lightbox">
+  <button class="lightbox__close" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox__bar">
+    <span id="lightbox-caption" class="lightbox__caption"></span>
+    <a id="lightbox-download" class="lightbox__download" download>↓ Download</a>
+  </div>
+</div>
+
+<script src="tools.js"></script>
+</body>
+</html>
